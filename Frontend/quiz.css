@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+  font-family:Helvetica;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+.grid-box {
+  --hue: var(--hue-neutral);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 150%, 14%);
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+.backbtn
+{
+  margin-top: 10%;
+  margin-left: 33%;
+  font-size: 25px;
+  width: 300px;
+  height: 80px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.title{
+  color: hsl(var(--hue), 100%, 10%);
+  text-align: center;
+  padding-top: 5%;
+  font-size: 30px;
+}
+.bottom-text{
+  color: hsl(var(--hue), 100%, 10%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  padding-left: 44%;
+  padding-bottom: 9%;
+  text-align: center;
+}
+.container {
+  width: 900px;
+  height: 750px;
+  max-width: 80%;
+  background-color: #f6cf70;
+  border-radius: 30px;
+  /* padding: 20px; */
+  box-shadow: 0 0 10px 2px;
+  
+}
+
+.btn-grid {
+  display: grid;
+  gap: 40px;
+  margin: 20px 0;
+  padding: 60px;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 3px solid hsl(var(--hue), 100%, 20%);
+  background-color: hsl(var(--hue), 100%, 20%);
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: white;
+  font-size: 20px;
+  outline: none;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px 2px black;
+  transition: 0.3s;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn, .finish-btn {
+  font-size: 25px;
+  width: 300px;
+  height: 80px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.start-btn{
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.controls-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions{
+  font-size: 25px;
+  padding-left: 20px;
+  padding-top: 5%;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}

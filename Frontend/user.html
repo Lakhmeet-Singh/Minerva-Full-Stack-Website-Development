@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minerva</title>
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="register.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="api.js"></script>
+    <script src="session.js"></script>
+    <script src="user.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <li><a class = "nav_img" href="index.html"><img src="img/Minerva.png" width="70" height="55"></a></li>
+        <nav class ="navbar"> 
+            <div class="leftMenu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li> 
+                    <li><a id="courseBt" href="courses.html" hidden>COURSES</a></li>
+                    <li><a id="testBt" href="tests.html" hidden>TEST</a></li>
+            </div>
+            <div class="rightMenu">
+                <ul>
+                    <li><a id="rightButton" href="register.html">REGISTER</a></li>
+                    <li><a id="leftButton" href="signin.html">SIGN IN</a></li>
+                </ul>
+            </div>
+        </nav>
+ 
+        <div id="userContainer">
+            <section class="register_box">
+                <form id="changeInfo" class="register" novalidate>
+                    <div class="register_form">
+                        <div class="title">
+                            <h1> STUDENT INFORMATION</h1><br>
+                        </div>
+                        <div class="input">
+                                <div class="left">
+                                    <h1>Email</h1>
+                                    <input class = "Inputtext" type="text" id="emailU"><br><br>
+                                    <h1>Password</h1>
+                                    <input class = "Inputtext" type="text" id="passU"><br><br>
+                                    <h1>First Name</h1>
+                                    <input class = "Inputtext" type="text" id="firstNameI"><br><br>
+                                    <h1>Last Name</h1>
+                                    <input class = "Inputtext" type="text" id="lastNameI"><br><br>
+                                </div>
+                                <div class="right">
+                                    <h1>Phone Number</h1>
+                                    <input class = "Inputtext" type="text" id="phoneNumberU"><br><br>
+                                    <h1>Date of Birth</h1>
+                                    <input class = "Inputtext" type="text" id="dateBirthU"><br><br>
+                                    <h1>Gender</h1>
+                                    <input class = "Inputtext" type="text" id="genderU"><br><br>
+                                    <h1>Country</h1>
+                                    <input class = "Inputtext" type="text" id="countryU"><br><br>
+                                </div>
+                            </div>
+                                <div class="button">
+                                     <input class = "register_button" type="submit" id="changeInfo" value="Change Information">
+                                </div>
+                        </div>
+                </form>
+            </section>
+        </div>
+
+    </section>
+
+   
+</body>
+</html>
+

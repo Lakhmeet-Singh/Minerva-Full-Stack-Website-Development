@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="quiz.css" rel="stylesheet">
+  <script defer src="quiz.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script defer src="api.js"></script>
+  <title>Quiz</title>
+</head>
+<body>
+  <section class="grid-box">
+  <div id="quizContainer" class="container">
+    <div class="title">
+      <h2>Intro to Numbers!</h2>
+    </div>
+    <div class="bottom-text hide">
+      <h4>Test your knowledge &#128175</h4>
+    </div>
+    <div id="question-container" class="hide">
+      <div id="question" class="questions">Question</div>
+      <div id="answer-btn" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls-btn">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+      <a><button id="finish-btn" class="finish-btn btn hide">Finish</button></a>
+    </div>
+  </div>
+  </section>
+</body>
+</html>

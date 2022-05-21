@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Helvetica;
+    background-color: #fffaec;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+  }
+  
+  .wrapper .sidebar{
+    width: 200px;
+    height: 100%;
+    background: #f6cf70;
+    padding: 30px 0px;
+    position: fixed;
+  }
+  
+  .wrapper .sidebar h2{
+    color: #2b374d;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .wrapper .sidebar ul li{
+    padding: 15px;
+    border-bottom: 2px solid #2b374d;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+    border-top: 2px solid rgba(255,255,255,0.05);
+  }    
+  
+  .wrapper .sidebar ul li a{
+    color: #2b374d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+  }
+  
+  .wrapper .sidebar ul li a:hover{
+    color: beige;
+  }
+  
+  .wrapper .main_content{
+    width: 100%;
+    margin-left: 200px;
+  }
+
+  .wrapper .sidebar .course button{
+    text-decoration: none;
+    list-style: none;
+    color: #f6cf70;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    align-items: center;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 175%;
+    border-radius: 50px;
+    background: #364258;
+    width: 75%;
+    border: none;
+    outline: none
+  }
+  .course{
+    padding-top: 20px;
+  }
+  .wrapper .main_content .header{
+    padding: 20px;
+    background: #fff;
+    color: black;
+    border-bottom: 1px solid #e0e4e8;
+  }
+  
+  .wrapper .main_content .info{
+    margin: 20px;
+    color: black;
+    line-height: 25px;
+  }
+  
+  .wrapper .main_content .info div{
+    margin-bottom: 20px;
+  }
+  .wrapper .sidebar .social_media{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .wrapper .sidebar .social_media a{
+    display: block;
+    width: 40px;
+    background: #594f8d;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 5px;
+    color: #bdb8d7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .wrapper .sidebar .course .button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #364258;
+    font-weight: bold;
+    width: 60%;
+    border: none;
+    outline: none
+}
+.register_button:hover{
+    background: #252d3d;
+}
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minerva</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="signin.css">
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="api.js"></script>
+    </head>
+    <body>
+        <section class="signin_box">
+            <form class="signin" id="signin" novalidate>
+                <div class="signin_minerva_logo">
+                    <img class= "signin_logo" src="img/Minerva.png" alt="Logo">
+                </div> 
+                <div class="signin_form">
+                    <div align="center"><class="signin_form_input">
+                        <input class = "Inputtext" type="email" id="email" name="email" placeholder = "Email"required><br><br>
+                        <input class = "Inputtext" type="password" id="password" name="password" placeholder = "Password"required minlength="8"><br><br>
+                        <div class="f_psw"> <p><a href = "#"> Forgot Password?</a></p></div>
+                        <input class = "signin_button" type="submit" id="button" value="Sign in">
+                        <div class="signin_register_link">
+                            <p>Don't have an account? Register <a href="register.html"><b>Here</b></a></p>
+                         </div>
+                     </div>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}   
+body{
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(img/Minerva.png);
+    background-size: 100% 138%;
+    background-position: cover;
+}
+.register_box{
+    margin-top: 4%;
+}
+
+.register
+{
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0.150, 0.150, 0.150, 0.150);
+}
+.register_minerva_logo{
+    padding: 30px;
+    background: #f6cf70;
+}
+.register_logo{
+    border-radius: 20px;
+    justify-content: center;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+.register_form{
+    padding: 30px;
+    background: #f6cf70;
+}
+.Inputtext{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid #dddddd;
+    background-color:#ffffff;
+    outline: none;
+    transition: border-colour 0.5s;
+}
+.Inputtext:focus {
+    border-color:  #364258;
+}
+.register_button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #364258;
+    font-weight: bold;
+    width: 60%;
+    border: none;
+    outline: none
+}
+.register_button:hover{
+    background: #252d3d;
+}
+.register_login_link{
+    font-family: Helvetica;
+    font-size: medium;
+    padding-top: 10px;
+}

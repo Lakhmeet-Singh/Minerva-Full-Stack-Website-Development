@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Helvetica;
+    background-color: #fffaec;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(Img/contact.jpg);
+    background-size: 100%;
+    background-position: cover;
+    position: absolute;
+}
+
+/* --------- menu -------- */
+
+.nav_img{
+    list-style: none;
+    position: absolute;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:none;
+}
+.Menu{
+    flex: 1;
+    text-align: right;
+}
+
+/* menu box */
+.Menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    font-weight: bold;
+    line-height: 80px
+}
+/* menu text */
+.Menu ul li a { 
+    text-decoration: none;
+    font-size: 16px;
+    color: #f6cf70;
+    padding : 0px 20px;
+}
+
+.Menu ul li a:hover {
+    font-weight: bolder;
+    transition: 0.5s;
+    color: beige
+}
+
+/* --------- form -------- */
+
+.contact-title{
+	text-align: center;
+	color: #2b374d;
+	font:bold;
+}
+.contact-title h1{
+	padding-bottom: 10px;
+}
+.contact-title h2{
+	padding-bottom: 40px;
+}
+.contact-box{
+   position: relative;
+   top: 120px;
+   width: 900px;
+   height: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   box-shadow: 10px 20px 25px  #0000005b;
+   background-color:  #2b374dbd ;
+   border-radius: 8px;
+   margin-bottom: 20px;
+   text-decoration-color: white;
+}
+  .container {
+    position: relative;
+    top: 5px;
+	width: 400px;
+	height: 540px;
+	padding: 20px;
+	box-shadow: 10px 20px 25px   #00000021;
+	background-color: #f6cf70;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	text-decoration-color: white;
+  }
+ 
+
+.formbox{
+	height: 30px;
+	width: 300px;
+	background-color: white;
+	border: none;
+	color: #2b374d;
+	padding-left: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 8px;
+	position: relative;
+	right: -30px;
+}
+
+.formbox-message{
+	height: 100px;
+	width: 300px;
+	background-color: white;
+	border: none;
+	color:#2b374d;
+	padding: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 8px;
+	position: relative;
+	right: -30px;
+
+}
+
+/* send button */
+button {
+	font-size: 20px;
+	font-weight: 600;
+	background-color: #2b374d;
+	color: white;
+	display: flex;
+	border-radius: 16px;
+	overflow: hidden;
+	transition: all 0.2s;
+	position: relative;
+	top: 45px;
+	width: 200px;
+	height: 50px;
+	margin-left: 20%;
+	justify-content: center;
+	align-items:center ;
+}
+
+button span {
+ display: block;
+ transition: all 0.3s ease-in-out;
+}
+
+button svg {
+ display: block;
+ transform-origin: center center;
+ transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+ animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+ transform: translateX(-1.0em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+ transform: translateX(0.4em);
+}
+
+button:active {
+ transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+ from {
+  transform: translateY(0.1em);
+ }
+
+ to {
+  transform: translateY(-0.1em);
+ }
+}
+
+/* contact info on side */
+
+.contact-detail{
+	font-size: 18px;  
+	margin-left: 50%;
+	bottom: 90%;
+	text-align: center;
+	position: relative;
+	color: #f6cf70;
+} 
+.email, .phone, .address{
+	padding-bottom: 40px;
+}
+h3{
+	padding-bottom: 10px;	
+}
+h4{
+	font-weight: 500;
+	color: white;
+}
+.social{
+    list-style: none;
+    display: flex;
+	padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+.social li{
+    margin: 0 20px;
+}
+.social a{
+    text-decoration: none;
+    color: #f6cf70;
+}
+.social a i{
+    font-size: 40px;
+    transition: 0.5s;
+}
+.social a :hover{
+    color: beige
+}
